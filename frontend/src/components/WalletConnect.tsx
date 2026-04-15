@@ -53,3 +53,4 @@ export function WalletConnect({ onConnected }: Props) {
     </div>
   )
 }
+// wallet connect
