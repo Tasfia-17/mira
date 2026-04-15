@@ -284,3 +284,5 @@ This project was built for the HashKey Chain On-Chain Horizon Hackathon 2026, De
 The core thesis is that the most important unsolved problem in DeFi AI agents is not capability but trust. Agents can execute trades. What they cannot do is prove what they did. MiraAuditLog.sol is a direct answer to that problem, built on the only SFC-licensed L2 in existence.
 
 The Telegram interface is a direct answer to the adoption problem. DeFi products fail because they require users to come to them. MIRA goes to the user, in the app they already use every day.
+
+*Built for HashKey Chain On-Chain Horizon Hackathon 2026.*
