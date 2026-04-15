@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" width="860" height="260">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060a14"/><stop offset="100%" style="stop-color:#0a1220"/>
+    </linearGradient>
+    <marker id="arrT" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#00c8ff"/>
+    </marker>
+    <marker id="arrP" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b060ff"/>
+    </marker>
+    <marker id="arrG" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#00e676"/>
+    </marker>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="860" height="260" fill="url(#bg)" rx="12"/>
+
+  <text x="430" y="28" font-family="'Courier New',monospace" font-size="12" fill="#b060ff" text-anchor="middle" letter-spacing="4" opacity="0.9">ON-CHAIN AUDIT TRAIL FLOW</text>
+
+  <!-- MIRA Action box -->
+  <rect x="30" y="55" width="150" height="60" rx="8" fill="#0d1830" stroke="#4080ff" stroke-width="1.5"/>
+  <text x="105" y="80" font-family="'Courier New',monospace" font-size="11" fill="#6090ff" text-anchor="middle" font-weight="bold">MIRA ACTION</text>
+  <text x="105" y="97" font-family="'Courier New',monospace" font-size="9" fill="#3a5090" text-anchor="middle">swap / alert / analysis</text>
+  <text x="105" y="110" font-family="'Courier New',monospace" font-size="9" fill="#3a5090" text-anchor="middle">payment / portfolio</text>
+
+  <!-- arrow right -->
+  <line x1="180" y1="85" x2="218" y2="85" stroke="#00c8ff" stroke-width="1.5" marker-end="url(#arrT)"/>
+  <text x="199" y="78" font-family="'Courier New',monospace" font-size="8" fill="#00c8ff" opacity="0.6" text-anchor="middle">call</text>
+
+  <!-- Hash payload box -->
+  <rect x="220" y="55" width="150" height="60" rx="8" fill="#0d1830" stroke="#4080ff" stroke-width="1.5"/>
+  <text x="295" y="80" font-family="'Courier New',monospace" font-size="11" fill="#6090ff" text-anchor="middle" font-weight="bold">HASH PAYLOAD</text>
+  <text x="295" y="97" font-family="'Courier New',monospace" font-size="9" fill="#3a5090" text-anchor="middle">SHA-256(JSON payload)</text>
+  <text x="295" y="110" font-family="'Courier New',monospace" font-size="9" fill="#3a5090" text-anchor="middle">deterministic bytes32</text>
+
+  <!-- arrow right -->
+  <line x1="370" y1="85" x2="408" y2="85" stroke="#00c8ff" stroke-width="1.5" marker-end="url(#arrT)"/>
+  <text x="389" y="78" font-family="'Courier New',monospace" font-size="8" fill="#00c8ff" opacity="0.6" text-anchor="middle">anchor()</text>
+
+  <!-- MiraAuditLog box -->
+  <rect x="410" y="40" width="200" height="90" rx="8" fill="#1a0d30" stroke="#b060ff" stroke-width="2"/>
+  <rect x="410" y="40" width="200" height="4" rx="2" fill="#b060ff" opacity="0.8"/>
+  <text x="510" y="68" font-family="'Courier New',monospace" font-size="12" fill="#b060ff" text-anchor="middle" font-weight="bold">MiraAuditLog.sol</text>
+  <text x="510" y="85" font-family="'Courier New',monospace" font-size="9" fill="#7040a0" text-anchor="middle">id, wallet, action, dataHash</text>
+  <text x="510" y="100" font-family="'Courier New',monospace" font-size="9" fill="#7040a0" text-anchor="middle">summary, timestamp</text>
+  <text x="510" y="115" font-family="'Courier New',monospace" font-size="9" fill="#7040a0" text-anchor="middle">confirmed, txHash</text>
+
+  <!-- arrow right to confirm -->
+  <line x1="610" y1="85" x2="648" y2="85" stroke="#b060ff" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <text x="629" y="78" font-family="'Courier New',monospace" font-size="8" fill="#b060ff" opacity="0.6" text-anchor="middle">confirm()</text>
+
+  <!-- Confirmed entry box -->
+  <rect x="650" y="55" width="180" height="60" rx="8" fill="#0d2018" stroke="#00e676" stroke-width="1.5"/>
+  <text x="740" y="80" font-family="'Courier New',monospace" font-size="11" fill="#00e676" text-anchor="middle" font-weight="bold">CONFIRMED ENTRY</text>
+  <text x="740" y="97" font-family="'Courier New',monospace" font-size="9" fill="#30a060" text-anchor="middle">txHash stored on-chain</text>
+  <text x="740" y="110" font-family="'Courier New',monospace" font-size="9" fill="#30a060" text-anchor="middle">permanent, immutable</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="165" x2="830" y2="165" stroke="#1a2535" stroke-width="1"/>
+  <text x="430" y="182" font-family="'Courier New',monospace" font-size="10" fill="#3a5070" text-anchor="middle" letter-spacing="2">VERIFICATION PATH</text>
+
+  <!-- Verify flow -->
+  <!-- Anyone box -->
+  <rect x="30" y="195" width="130" height="45" rx="6" fill="#0d2030" stroke="#00c8ff" stroke-width="1"/>
+  <text x="95" y="215" font-family="'Courier New',monospace" font-size="10" fill="#00c8ff" text-anchor="middle">Anyone</text>
+  <text x="95" y="230" font-family="'Courier New',monospace" font-size="9" fill="#3a8090" text-anchor="middle">calls verify(id, hash)</text>
+
+  <line x1="160" y1="217" x2="198" y2="217" stroke="#00c8ff" stroke-width="1.5" marker-end="url(#arrT)"/>
+
+  <!-- Contract check -->
+  <rect x="200" y="195" width="160" height="45" rx="6" fill="#1a0d30" stroke="#b060ff" stroke-width="1"/>
+  <text x="280" y="215" font-family="'Courier New',monospace" font-size="10" fill="#b060ff" text-anchor="middle">MiraAuditLog.sol</text>
+  <text x="280" y="230" font-family="'Courier New',monospace" font-size="9" fill="#7040a0" text-anchor="middle">entries[id].dataHash == hash</text>
+
+  <line x1="360" y1="217" x2="398" y2="217" stroke="#00e676" stroke-width="1.5" marker-end="url(#arrG)"/>
+
+  <!-- Result -->
+  <rect x="400" y="195" width="130" height="45" rx="6" fill="#0d2018" stroke="#00e676" stroke-width="1"/>
+  <text x="465" y="215" font-family="'Courier New',monospace" font-size="10" fill="#00e676" text-anchor="middle">true / false</text>
+  <text x="465" y="230" font-family="'Courier New',monospace" font-size="9" fill="#30a060" text-anchor="middle">cryptographic proof</text>
+
+  <!-- BlockScout link -->
+  <rect x="570" y="195" width="260" height="45" rx="6" fill="#0d2030" stroke="#00c8ff" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="700" y="215" font-family="'Courier New',monospace" font-size="10" fill="#00c8ff" text-anchor="middle">hashkey.blockscout.com</text>
+  <text x="700" y="230" font-family="'Courier New',monospace" font-size="9" fill="#3a8090" text-anchor="middle">public explorer, no trust required</text>
+
+  <!-- Corner accents -->
+  <g stroke="#00c8ff" stroke-width="1" fill="none" opacity="0.2">
+    <path d="M6,6 L6,16 M6,6 L16,6"/>
+    <path d="M854,6 L854,16 M854,6 L844,6"/>
+    <path d="M6,254 L6,244 M6,254 L16,254"/>
+    <path d="M854,254 L854,244 M854,254 L844,254"/>
+  </g>
+</svg>

@@ -45,6 +45,18 @@ Every action she takes gets anchored to HashKey Chain through MiraAuditLog.sol. 
   <img src="docs/architecture.svg" alt="MIRA Architecture" width="860"/>
 </div>
 
+## User Flow
+
+<div align="center">
+  <img src="docs/user-flow.svg" alt="MIRA User Flow" width="860"/>
+</div>
+
+## Audit Trail Flow
+
+<div align="center">
+  <img src="docs/audit-flow.svg" alt="MIRA Audit Trail Flow" width="860"/>
+</div>
+
 The system has three layers that connect to each other.
 
 The interface layer is Telegram and an optional web dashboard. Both connect to the MIRA backend over WebSocket. The Telegram bot handles text commands, natural language messages, and voice messages. The web dashboard provides a visual portfolio view, token spotlight, swap confirmation, and the on-chain audit history panel.
