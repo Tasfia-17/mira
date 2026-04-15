@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/logo.svg" alt="MIRA" width="400"/>
+  <img src="docs/logo.png" alt="MIRA" width="300"/><br/><img src="docs/mira-persona.png" alt="MIRA Agent" width="160"/>
   <br/>
   <br/>
   <strong>Your on-chain operator for HashKey Chain</strong>
