@@ -84,3 +84,4 @@ export function DeFiPanel({ portfolio, wallet, onQuery, onSpotlight, watchlist, 
     </div>
   )
 }
+// defi panel
