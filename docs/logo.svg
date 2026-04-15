@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050810"/>
+      <stop offset="100%" style="stop-color:#0a1020"/>
+    </linearGradient>
+
+    <!-- Teal glow gradient for letters -->
+    <linearGradient id="letterFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff"/>
+      <stop offset="60%" style="stop-color:#00c8e0"/>
+      <stop offset="100%" style="stop-color:#0090b0"/>
+    </linearGradient>
+
+    <!-- 3D side face (darker) -->
+    <linearGradient id="letterSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#004455"/>
+      <stop offset="100%" style="stop-color:#002233"/>
+    </linearGradient>
+
+    <!-- Bottom face -->
+    <linearGradient id="letterBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#003344"/>
+      <stop offset="100%" style="stop-color:#001122"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle outer glow -->
+    <filter id="outerGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0   0 0.8 0.9 0 0   0 0.9 1 0 0   0 0 0 0.6 0" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" fill="rgba(0,200,255,0.03)"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#bg)" rx="12"/>
+  <rect width="400" height="200" fill="url(#scanlines)" rx="12" opacity="0.5"/>
+
+  <!-- Grid lines (retro feel) -->
+  <g stroke="#00c8ff" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="50" x2="400" y2="50"/>
+    <line x1="0" y1="100" x2="400" y2="100"/>
+    <line x1="0" y1="150" x2="400" y2="150"/>
+    <line x1="100" y1="0" x2="100" y2="200"/>
+    <line x1="200" y1="0" x2="200" y2="200"/>
+    <line x1="300" y1="0" x2="300" y2="200"/>
+  </g>
+
+  <!-- 3D depth offset = 6px right, 5px down -->
+  <!-- Letter M -->
+  <!-- Bottom face -->
+  <polygon points="30,145 36,140 36,75 30,80" fill="url(#letterBottom)" opacity="0.9"/>
+  <polygon points="30,145 36,140 50,140 44,145" fill="url(#letterSide)" opacity="0.9"/>
+  <!-- Side face left stem -->
+  <polygon points="44,145 50,140 50,75 44,80" fill="url(#letterSide)" opacity="0.7"/>
+  <!-- Front face -->
+  <path d="M30,80 L30,145 L44,145 L44,110 L57,130 L70,110 L70,145 L84,145 L84,80 L70,80 L57,100 L44,80 Z" fill="url(#letterFront)" filter="url(#glow)"/>
+  <!-- 3D top extrusion M -->
+  <polygon points="30,80 36,75 50,75 44,80" fill="#00e8ff" opacity="0.6"/>
+  <polygon points="84,80 90,75 96,75 90,80" fill="#00e8ff" opacity="0.4"/>
+
+  <!-- Letter I -->
+  <polygon points="100,145 106,140 106,75 100,80" fill="url(#letterBottom)" opacity="0.9"/>
+  <rect x="100" y="80" width="14" height="65" fill="url(#letterFront)" filter="url(#glow)"/>
+  <polygon points="100,80 106,75 120,75 114,80" fill="#00e8ff" opacity="0.6"/>
+
+  <!-- Letter R -->
+  <polygon points="130,145 136,140 136,75 130,80" fill="url(#letterBottom)" opacity="0.9"/>
+  <path d="M130,80 L130,145 L144,145 L144,118 L158,145 L174,145 L158,115 C166,112 170,105 170,96 C170,86 163,80 152,80 Z M144,92 L152,92 C156,92 158,94 158,98 C158,102 156,104 152,104 L144,104 Z" fill="url(#letterFront)" filter="url(#glow)"/>
+  <polygon points="130,80 136,75 150,75 144,80" fill="#00e8ff" opacity="0.6"/>
+
+  <!-- Letter A -->
+  <path d="M185,145 L205,80 L225,80 L245,145 L231,145 L227,132 L203,132 L199,145 Z M207,120 L223,120 L215,95 Z" fill="url(#letterFront)" filter="url(#glow)"/>
+  <!-- 3D side A -->
+  <polygon points="185,145 191,140 211,80 205,80" fill="url(#letterSide)" opacity="0.5"/>
+
+  <!-- Tagline -->
+  <text x="200" y="170" font-family="'Courier New', monospace" font-size="11"
+    fill="#00c8ff" opacity="0.7" text-anchor="middle" letter-spacing="4">
+    ON-CHAIN INTELLIGENCE
+  </text>
+
+  <!-- Corner accents -->
+  <g stroke="#00c8ff" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M10,10 L10,25 M10,10 L25,10"/>
+    <path d="M390,10 L390,25 M390,10 L375,10"/>
+    <path d="M10,190 L10,175 M10,190 L25,190"/>
+    <path d="M390,190 L390,175 M390,190 L375,190"/>
+  </g>
+
+  <!-- Dot accent after A -->
+  <circle cx="258" cy="112" r="5" fill="#00c8ff" filter="url(#outerGlow)" opacity="0.9"/>
+  <circle cx="258" cy="112" r="2" fill="#ffffff" opacity="0.8"/>
+</svg>

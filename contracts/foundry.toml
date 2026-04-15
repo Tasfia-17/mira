@@ -1,0 +1,12 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.24"
+
+[rpc_endpoints]
+hashkey = "https://mainnet.hsk.xyz"
+hashkey_testnet = "https://testnet.hsk.xyz"
+
+[etherscan]
+hashkey = { key = "placeholder", url = "https://hashkey.blockscout.com/api" }

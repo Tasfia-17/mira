@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060a14"/>
+      <stop offset="100%" style="stop-color:#0a1220"/>
+    </linearGradient>
+    <linearGradient id="boxTeal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2030"/>
+      <stop offset="100%" style="stop-color:#071520"/>
+    </linearGradient>
+    <linearGradient id="boxBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1830"/>
+      <stop offset="100%" style="stop-color:#070f20"/>
+    </linearGradient>
+    <linearGradient id="boxGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2018"/>
+      <stop offset="100%" style="stop-color:#071510"/>
+    </linearGradient>
+    <linearGradient id="boxPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0d30"/>
+      <stop offset="100%" style="stop-color:#0f0720"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowTeal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#00c8ff"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#00e676"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b060ff"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="560" fill="url(#bg)" rx="16"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#00c8ff" stroke-width="0.3" opacity="0.05">
+    <line x1="0" y1="70" x2="900" y2="70"/>
+    <line x1="0" y1="140" x2="900" y2="140"/>
+    <line x1="0" y1="210" x2="900" y2="210"/>
+    <line x1="0" y1="280" x2="900" y2="280"/>
+    <line x1="0" y1="350" x2="900" y2="350"/>
+    <line x1="0" y1="420" x2="900" y2="420"/>
+    <line x1="0" y1="490" x2="900" y2="490"/>
+    <line x1="150" y1="0" x2="150" y2="560"/>
+    <line x1="300" y1="0" x2="300" y2="560"/>
+    <line x1="450" y1="0" x2="450" y2="560"/>
+    <line x1="600" y1="0" x2="600" y2="560"/>
+    <line x1="750" y1="0" x2="750" y2="560"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="38" font-family="'Courier New', monospace" font-size="16" fill="#00c8ff"
+    text-anchor="middle" letter-spacing="6" filter="url(#glow)">MIRA SYSTEM ARCHITECTURE</text>
+  <line x1="200" y1="48" x2="700" y2="48" stroke="#00c8ff" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- ROW 1: User interfaces -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <!-- Telegram Box -->
+  <rect x="60" y="70" width="160" height="80" rx="8" fill="url(#boxTeal)" stroke="#00c8ff" stroke-width="1.5"/>
+  <rect x="60" y="70" width="160" height="4" rx="2" fill="#00c8ff" opacity="0.6"/>
+  <text x="140" y="100" font-family="'Courier New', monospace" font-size="13" fill="#00c8ff" text-anchor="middle" font-weight="bold">TELEGRAM</text>
+  <text x="140" y="118" font-family="'Courier New', monospace" font-size="10" fill="#5a9ab0" text-anchor="middle">@mira_hsk_bot</text>
+  <text x="140" y="136" font-family="'Courier New', monospace" font-size="9" fill="#3a6a80" text-anchor="middle">voice + text + commands</text>
+
+  <!-- Web Dashboard Box -->
+  <rect x="370" y="70" width="160" height="80" rx="8" fill="url(#boxTeal)" stroke="#00c8ff" stroke-width="1.5"/>
+  <rect x="370" y="70" width="160" height="4" rx="2" fill="#00c8ff" opacity="0.6"/>
+  <text x="450" y="100" font-family="'Courier New', monospace" font-size="13" fill="#00c8ff" text-anchor="middle" font-weight="bold">WEB DASHBOARD</text>
+  <text x="450" y="118" font-family="'Courier New', monospace" font-size="10" fill="#5a9ab0" text-anchor="middle">React + TypeScript</text>
+  <text x="450" y="136" font-family="'Courier New', monospace" font-size="9" fill="#3a6a80" text-anchor="middle">portfolio + audit + swap UI</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- ROW 2: MIRA Core Backend -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <!-- Central MIRA Engine -->
+  <rect x="200" y="210" width="500" height="130" rx="10" fill="url(#boxBlue)" stroke="#4080ff" stroke-width="1.5"/>
+  <rect x="200" y="210" width="500" height="4" rx="2" fill="#4080ff" opacity="0.7"/>
+  <text x="450" y="238" font-family="'Courier New', monospace" font-size="14" fill="#6090ff" text-anchor="middle" font-weight="bold" letter-spacing="2">MIRA CORE ENGINE</text>
+
+  <!-- Sub-boxes inside engine -->
+  <rect x="215" y="248" width="110" height="50" rx="5" fill="#0a1530" stroke="#2050a0" stroke-width="1"/>
+  <text x="270" y="268" font-family="'Courier New', monospace" font-size="9" fill="#4070d0" text-anchor="middle">AWS BEDROCK</text>
+  <text x="270" y="282" font-family="'Courier New', monospace" font-size="8" fill="#2a4080" text-anchor="middle">Claude 3.5 Sonnet</text>
+  <text x="270" y="293" font-family="'Courier New', monospace" font-size="8" fill="#2a4080" text-anchor="middle">tool use + reasoning</text>
+
+  <rect x="340" y="248" width="110" height="50" rx="5" fill="#0a1530" stroke="#2050a0" stroke-width="1"/>
+  <text x="395" y="268" font-family="'Courier New', monospace" font-size="9" fill="#4070d0" text-anchor="middle">AWS POLLY</text>
+  <text x="395" y="282" font-family="'Courier New', monospace" font-size="8" fill="#2a4080" text-anchor="middle">neural TTS</text>
+  <text x="395" y="293" font-family="'Courier New', monospace" font-size="8" fill="#2a4080" text-anchor="middle">3 voice personas</text>
+
+  <rect x="465" y="248" width="110" height="50" rx="5" fill="#0a1530" stroke="#2050a0" stroke-width="1"/>
+  <text x="520" y="268" font-family="'Courier New', monospace" font-size="9" fill="#4070d0" text-anchor="middle">AWS TRANSCRIBE</text>
+  <text x="520" y="282" font-family="'Courier New', monospace" font-size="8" fill="#2a4080" text-anchor="middle">voice messages</text>
+  <text x="520" y="293" font-family="'Courier New', monospace" font-size="8" fill="#2a4080" text-anchor="middle">speech to text</text>
+
+  <rect x="590" y="248" width="95" height="50" rx="5" fill="#0a1530" stroke="#2050a0" stroke-width="1"/>
+  <text x="637" y="268" font-family="'Courier New', monospace" font-size="9" fill="#4070d0" text-anchor="middle">ALERT ENGINE</text>
+  <text x="637" y="282" font-family="'Courier New', monospace" font-size="8" fill="#2a4080" text-anchor="middle">60s polling</text>
+  <text x="637" y="293" font-family="'Courier New', monospace" font-size="8" fill="#2a4080" text-anchor="middle">proactive push</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- ROW 3: Data + Chain layers -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <!-- HashKey Chain Data -->
+  <rect x="60" y="400" width="220" height="110" rx="8" fill="url(#boxGreen)" stroke="#00e676" stroke-width="1.5"/>
+  <rect x="60" y="400" width="220" height="4" rx="2" fill="#00e676" opacity="0.6"/>
+  <text x="170" y="425" font-family="'Courier New', monospace" font-size="12" fill="#00e676" text-anchor="middle" font-weight="bold">HASHKEY CHAIN DATA</text>
+  <text x="170" y="445" font-family="'Courier New', monospace" font-size="9" fill="#30a060" text-anchor="middle">BlockScout v2 API</text>
+  <text x="170" y="460" font-family="'Courier New', monospace" font-size="9" fill="#30a060" text-anchor="middle">wallet history + token search</text>
+  <text x="170" y="475" font-family="'Courier New', monospace" font-size="9" fill="#30a060" text-anchor="middle">HyperIndex V3 DEX</text>
+  <text x="170" y="490" font-family="'Courier New', monospace" font-size="9" fill="#30a060" text-anchor="middle">swap quotes + execution</text>
+  <text x="170" y="505" font-family="'Courier New', monospace" font-size="9" fill="#30a060" text-anchor="middle">HashKey RPC (mainnet.hsk.xyz)</text>
+
+  <!-- HSP Payments -->
+  <rect x="320" y="400" width="180" height="110" rx="8" fill="url(#boxTeal)" stroke="#00c8ff" stroke-width="1.5"/>
+  <rect x="320" y="400" width="180" height="4" rx="2" fill="#00c8ff" opacity="0.6"/>
+  <text x="410" y="425" font-family="'Courier New', monospace" font-size="12" fill="#00c8ff" text-anchor="middle" font-weight="bold">HSP PAYMENTS</text>
+  <text x="410" y="445" font-family="'Courier New', monospace" font-size="9" fill="#3a8090" text-anchor="middle">HashKey Settlement Protocol</text>
+  <text x="410" y="460" font-family="'Courier New', monospace" font-size="9" fill="#3a8090" text-anchor="middle">USDC + USDT rails</text>
+  <text x="410" y="475" font-family="'Courier New', monospace" font-size="9" fill="#3a8090" text-anchor="middle">JWT signed checkout</text>
+  <text x="410" y="490" font-family="'Courier New', monospace" font-size="9" fill="#3a8090" text-anchor="middle">webhook verification</text>
+
+  <!-- Audit Contract -->
+  <rect x="540" y="400" width="300" height="110" rx="8" fill="url(#boxPurple)" stroke="#b060ff" stroke-width="1.5"/>
+  <rect x="540" y="400" width="300" height="4" rx="2" fill="#b060ff" opacity="0.6"/>
+  <text x="690" y="425" font-family="'Courier New', monospace" font-size="12" fill="#b060ff" text-anchor="middle" font-weight="bold">MIRAAUDITLOG.SOL</text>
+  <text x="690" y="445" font-family="'Courier New', monospace" font-size="9" fill="#7040a0" text-anchor="middle">on-chain decision anchoring</text>
+  <text x="690" y="460" font-family="'Courier New', monospace" font-size="9" fill="#7040a0" text-anchor="middle">anchor() confirm() verify()</text>
+  <text x="690" y="475" font-family="'Courier New', monospace" font-size="9" fill="#7040a0" text-anchor="middle">immutable audit trail</text>
+  <text x="690" y="490" font-family="'Courier New', monospace" font-size="9" fill="#7040a0" text-anchor="middle">every MIRA action provable</text>
+  <text x="690" y="505" font-family="'Courier New', monospace" font-size="9" fill="#7040a0" text-anchor="middle">deployed on HashKey Chain</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- ARROWS -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <!-- Telegram to Engine -->
+  <line x1="140" y1="150" x2="280" y2="210" stroke="#00c8ff" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrowTeal)" opacity="0.7"/>
+  <text x="185" y="188" font-family="'Courier New', monospace" font-size="8" fill="#00c8ff" opacity="0.6" transform="rotate(-25,185,188)">WebSocket</text>
+
+  <!-- Web to Engine -->
+  <line x1="450" y1="150" x2="450" y2="210" stroke="#00c8ff" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrowTeal)" opacity="0.7"/>
+  <text x="458" y="185" font-family="'Courier New', monospace" font-size="8" fill="#00c8ff" opacity="0.6">WS + REST</text>
+
+  <!-- Engine to HashKey Data -->
+  <line x1="340" y1="340" x2="200" y2="400" stroke="#00e676" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrowGreen)" opacity="0.7"/>
+
+  <!-- Engine to HSP -->
+  <line x1="420" y1="340" x2="415" y2="400" stroke="#00c8ff" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrowTeal)" opacity="0.7"/>
+
+  <!-- Engine to Audit Contract -->
+  <line x1="560" y1="340" x2="650" y2="400" stroke="#b060ff" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrowPurple)" opacity="0.7"/>
+  <text x="590" y="378" font-family="'Courier New', monospace" font-size="8" fill="#b060ff" opacity="0.7" transform="rotate(30,590,378)">anchor()</text>
+
+  <!-- Legend -->
+  <rect x="30" y="520" width="840" height="28" rx="4" fill="#0a1020" stroke="#1a2535" stroke-width="1"/>
+  <line x1="50" y1="534" x2="80" y2="534" stroke="#00c8ff" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="88" y="538" font-family="'Courier New', monospace" font-size="9" fill="#3a6a80">WebSocket / REST</text>
+  <line x1="220" y1="534" x2="250" y2="534" stroke="#00e676" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="258" y="538" font-family="'Courier New', monospace" font-size="9" fill="#3a6a80">Chain Data</text>
+  <line x1="360" y1="534" x2="390" y2="534" stroke="#b060ff" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="398" y="538" font-family="'Courier New', monospace" font-size="9" fill="#3a6a80">On-Chain Anchor</text>
+  <text x="700" y="538" font-family="'Courier New', monospace" font-size="9" fill="#2a4060">HashKey Chain On-Chain Horizon Hackathon 2026</text>
+</svg>
