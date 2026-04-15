@@ -190,3 +190,4 @@ async def dispatch_tool(name: str, inputs: dict, wallet: str = None) -> dict:
 
     except Exception as e:
         return {"error": str(e)}
+# 7 DeFi tools for Bedrock tool use
