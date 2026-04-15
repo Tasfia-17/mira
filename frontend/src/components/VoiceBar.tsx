@@ -65,3 +65,4 @@ export function VoiceBar({ onInput, voice, onVoiceChange }: Props) {
     </div>
   )
 }
+// voice bar
