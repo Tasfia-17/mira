@@ -538,3 +538,4 @@ class HSPAdapter:
         if not timestamp or not signature:
             return None
         return timestamp, signature
+# HSP stablecoin payment adapter
