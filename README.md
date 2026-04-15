@@ -13,7 +13,9 @@
 
 ---
 
-MIRA is a Telegram-native DeFi agent for HashKey Chain. She lives in your phone, watches your wallet around the clock, and executes trades through natural conversation. No app to install. No dashboard to open. No wallet connect flow. Just a message.
+MIRA is a Telegram-native DeFi agent for HashKey Chain that executes trades through conversation and anchors every decision on-chain so you can prove what she did.
+
+She lives in your phone, watches your wallet around the clock, and executes trades through natural conversation. No app to install. No dashboard to open. No wallet connect flow. Just a message.
 
 Every decision MIRA makes is anchored on-chain through a custom smart contract deployed on HashKey Chain. You can verify what she did, when she did it, and what the outcome was. This is the first DeFi agent with a provable, immutable audit trail.
 
