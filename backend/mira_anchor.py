@@ -179,3 +179,4 @@ class MiraAnchor:
 
 # Singleton
 mira_anchor = MiraAnchor()
+# web3 anchor client
