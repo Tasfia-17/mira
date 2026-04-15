@@ -68,3 +68,4 @@ function MiniChart({ points, positive }: { points: number[], positive: boolean }
     </svg>
   )
 }
+// spotlight panel
