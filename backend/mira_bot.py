@@ -330,3 +330,4 @@ if __name__ == "__main__":
     main()
 # Telegram bot
 # AWS Transcribe voice handler
+# inline keyboard swap confirm
