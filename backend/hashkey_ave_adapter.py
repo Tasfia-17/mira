@@ -414,3 +414,4 @@ def build_spotlight_payload(token_address: str, *, interval: str = "60") -> dict
         "_raw_chart_prices": chart_prices,
         "_raw_chart_times": chart_times,
     }
+# UI payload adapter
