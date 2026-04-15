@@ -57,3 +57,4 @@ export function MiraCharacter({ expression, speaking }: Props) {
     </div>
   )
 }
+// character component
